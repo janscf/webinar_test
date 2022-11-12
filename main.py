@@ -27,16 +27,12 @@ class Group:
     def add_students(self, students: List[Student]):
         for student in students:
             self.add_student(student)
-
-    """
-    Добавить метод print_info(), который выводит текст:
-
-    Когорта номер 45
-    В когорте 3 студента:
-    - Иван Демидов
-    - Виктория Сикрет
-    - Тимоти Шаламе
-    """
+    
+    def print_info(self):
+        print(f'Когорта номер: {self._group_number}')
+        print(f'В когорте {len(self._students)} студента:')
+        for student in self._students:
+            print(f'- {student.name}')
 
 if __name__ == '__main__':
     group = Group(45)
@@ -59,4 +55,4 @@ if __name__ == '__main__':
             ),
         ]
     )
-    # group.print_info()
+    group.print_info()
