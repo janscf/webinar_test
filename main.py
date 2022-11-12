@@ -32,7 +32,7 @@ class Group:
         print(f'Когорта номер: {self._group_number}\n'
               f'В когорте {len(self._students)} студента:')
         for student in self._students:
-            print(f'- {student.first_name} {student.last_name}')
+            print(f'* {student.first_name} {student.last_name}')
 
     """
     Добавить метод print_info(), который выводит текст:
