@@ -4,6 +4,9 @@ from typing import List
 
 @dataclass(frozen=True)
 class Student:
+    """
+    Класс студента с информацией об имени и возрасте
+    """
     first_name: str
     last_name: str
     age: int
