@@ -17,6 +17,9 @@ class Student:
 
 
 class Group:
+    '''
+    Класс для описания когорты.
+    '''
     def __init__(self, group_number):
         self._students = []
         self._group_number = group_number
